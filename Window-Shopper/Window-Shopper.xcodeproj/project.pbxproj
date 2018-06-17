@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C52188F420D6A27200C9EFA3 /* Window_ShopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52188F320D6A27200C9EFA3 /* Window_ShopperTests.swift */; };
+		C52188FE20D6A2B600C9EFA3 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52188FD20D6A2B600C9EFA3 /* Wage.swift */; };
+		C52188FF20D6A39800C9EFA3 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52188FD20D6A2B600C9EFA3 /* Wage.swift */; };
 		C528145820D64A6C005E13EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C528145720D64A6C005E13EA /* AppDelegate.swift */; };
 		C528145A20D64A6C005E13EA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C528145920D64A6C005E13EA /* MainVC.swift */; };
 		C528145D20D64A6C005E13EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C528145B20D64A6C005E13EA /* Main.storyboard */; };
@@ -15,7 +18,21 @@
 		C528146C20D64EEA005E13EA /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C528146B20D64EEA005E13EA /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C52188F620D6A27200C9EFA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C528144C20D64A6C005E13EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C528145320D64A6C005E13EA;
+			remoteInfo = "Window-Shopper";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		C52188F120D6A27200C9EFA3 /* Window-ShopperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Window-ShopperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52188F320D6A27200C9EFA3 /* Window_ShopperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window_ShopperTests.swift; sourceTree = "<group>"; };
+		C52188F520D6A27200C9EFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C52188FD20D6A2B600C9EFA3 /* Wage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 		C528145420D64A6C005E13EA /* Window-Shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Window-Shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C528145720D64A6C005E13EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C528145920D64A6C005E13EA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -27,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C52188EE20D6A27200C9EFA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C528145120D64A6C005E13EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +61,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C52188F220D6A27200C9EFA3 /* Window-ShopperTests */ = {
+			isa = PBXGroup;
+			children = (
+				C52188F320D6A27200C9EFA3 /* Window_ShopperTests.swift */,
+				C52188F520D6A27200C9EFA3 /* Info.plist */,
+			);
+			path = "Window-ShopperTests";
+			sourceTree = "<group>";
+		};
+		C52188FB20D6A27B00C9EFA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C52188FD20D6A2B600C9EFA3 /* Wage.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		C528144B20D64A6C005E13EA = {
 			isa = PBXGroup;
 			children = (
 				C528145620D64A6C005E13EA /* Window-Shopper */,
+				C52188F220D6A27200C9EFA3 /* Window-ShopperTests */,
 				C528145520D64A6C005E13EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				C528145420D64A6C005E13EA /* Window-Shopper.app */,
+				C52188F120D6A27200C9EFA3 /* Window-ShopperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +99,7 @@
 		C528145620D64A6C005E13EA /* Window-Shopper */ = {
 			isa = PBXGroup;
 			children = (
+				C52188FB20D6A27B00C9EFA3 /* Model */,
 				C528146A20D64E9E005E13EA /* Views */,
 				C528146920D64C92005E13EA /* Controller */,
 				C528145720D64A6C005E13EA /* AppDelegate.swift */,
@@ -86,6 +130,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C52188F020D6A27200C9EFA3 /* Window-ShopperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C52188FA20D6A27200C9EFA3 /* Build configuration list for PBXNativeTarget "Window-ShopperTests" */;
+			buildPhases = (
+				C52188ED20D6A27200C9EFA3 /* Sources */,
+				C52188EE20D6A27200C9EFA3 /* Frameworks */,
+				C52188EF20D6A27200C9EFA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C52188F720D6A27200C9EFA3 /* PBXTargetDependency */,
+			);
+			name = "Window-ShopperTests";
+			productName = "Window-ShopperTests";
+			productReference = C52188F120D6A27200C9EFA3 /* Window-ShopperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C528145320D64A6C005E13EA /* Window-Shopper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C528146620D64A6C005E13EA /* Build configuration list for PBXNativeTarget "Window-Shopper" */;
@@ -113,6 +175,12 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Parth Lamba";
 				TargetAttributes = {
+					C52188F020D6A27200C9EFA3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = KAF555H8BH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C528145320D64A6C005E13EA;
+					};
 					C528145320D64A6C005E13EA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = KAF555H8BH;
@@ -134,11 +202,19 @@
 			projectRoot = "";
 			targets = (
 				C528145320D64A6C005E13EA /* Window-Shopper */,
+				C52188F020D6A27200C9EFA3 /* Window-ShopperTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C52188EF20D6A27200C9EFA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C528145220D64A6C005E13EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,17 +228,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C52188ED20D6A27200C9EFA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52188F420D6A27200C9EFA3 /* Window_ShopperTests.swift in Sources */,
+				C52188FF20D6A39800C9EFA3 /* Wage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C528145020D64A6C005E13EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C528146C20D64EEA005E13EA /* CurrencyTextField.swift in Sources */,
+				C52188FE20D6A2B600C9EFA3 /* Wage.swift in Sources */,
 				C528145A20D64A6C005E13EA /* MainVC.swift in Sources */,
 				C528145820D64A6C005E13EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C52188F720D6A27200C9EFA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C528145320D64A6C005E13EA /* Window-Shopper */;
+			targetProxy = C52188F620D6A27200C9EFA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C528145B20D64A6C005E13EA /* Main.storyboard */ = {
@@ -184,6 +278,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C52188F820D6A27200C9EFA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = KAF555H8BH;
+				INFOPLIST_FILE = "Window-ShopperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambaParth.Window-ShopperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Window-Shopper.app/Window-Shopper";
+			};
+			name = Debug;
+		};
+		C52188F920D6A27200C9EFA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = KAF555H8BH;
+				INFOPLIST_FILE = "Window-ShopperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambaParth.Window-ShopperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Window-Shopper.app/Window-Shopper";
+			};
+			name = Release;
+		};
 		C528146420D64A6C005E13EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -308,6 +430,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C52188FA20D6A27200C9EFA3 /* Build configuration list for PBXNativeTarget "Window-ShopperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C52188F820D6A27200C9EFA3 /* Debug */,
+				C52188F920D6A27200C9EFA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C528144F20D64A6C005E13EA /* Build configuration list for PBXProject "Window-Shopper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -324,6 +454,7 @@
 				C528146820D64A6C005E13EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
