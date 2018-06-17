@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C528145820D64A6C005E13EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C528145720D64A6C005E13EA /* AppDelegate.swift */; };
-		C528145A20D64A6C005E13EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C528145920D64A6C005E13EA /* ViewController.swift */; };
+		C528145A20D64A6C005E13EA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C528145920D64A6C005E13EA /* MainVC.swift */; };
 		C528145D20D64A6C005E13EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C528145B20D64A6C005E13EA /* Main.storyboard */; };
 		C528145F20D64A6C005E13EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C528145E20D64A6C005E13EA /* Assets.xcassets */; };
 		C528146220D64A6C005E13EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C528146020D64A6C005E13EA /* LaunchScreen.storyboard */; };
+		C528146C20D64EEA005E13EA /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C528146B20D64EEA005E13EA /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C528145420D64A6C005E13EA /* Window-Shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Window-Shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C528145720D64A6C005E13EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C528145920D64A6C005E13EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C528145920D64A6C005E13EA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C528145C20D64A6C005E13EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C528145E20D64A6C005E13EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C528146120D64A6C005E13EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C528146320D64A6C005E13EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C528146B20D64EEA005E13EA /* CurrencyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		C528145620D64A6C005E13EA /* Window-Shopper */ = {
 			isa = PBXGroup;
 			children = (
+				C528146A20D64E9E005E13EA /* Views */,
+				C528146920D64C92005E13EA /* Controller */,
 				C528145720D64A6C005E13EA /* AppDelegate.swift */,
-				C528145920D64A6C005E13EA /* ViewController.swift */,
 				C528145B20D64A6C005E13EA /* Main.storyboard */,
 				C528145E20D64A6C005E13EA /* Assets.xcassets */,
 				C528146020D64A6C005E13EA /* LaunchScreen.storyboard */,
 				C528146320D64A6C005E13EA /* Info.plist */,
 			);
 			path = "Window-Shopper";
+			sourceTree = "<group>";
+		};
+		C528146920D64C92005E13EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C528145920D64A6C005E13EA /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C528146A20D64E9E005E13EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C528146B20D64EEA005E13EA /* CurrencyTextField.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C528145A20D64A6C005E13EA /* ViewController.swift in Sources */,
+				C528146C20D64EEA005E13EA /* CurrencyTextField.swift in Sources */,
+				C528145A20D64A6C005E13EA /* MainVC.swift in Sources */,
 				C528145820D64A6C005E13EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
